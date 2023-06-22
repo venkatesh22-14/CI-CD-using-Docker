@@ -3,7 +3,7 @@ pipeline {
 	
 	  tools
     {
-       //maven "mvn"
+       maven "mvn"
     }
  stages {
       stage('checkout') {
@@ -16,7 +16,7 @@ pipeline {
 	 stage('Execute Maven') {
            steps {
              
-               // sh 'mvn package'             
+                sh 'mvn package'             
           }
         }
         
